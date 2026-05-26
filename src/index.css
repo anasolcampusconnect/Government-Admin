@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+@theme {
+  /* Keep your existing theme variables here */
+  --color-brand-primary: #4338ca;
+  --spacing-128: 32rem;
+  --font-sans: "Inter", sans-serif;
+}
+/* Scrollbar hide karne ke liye */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hidden-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Add this to your main CSS file to style the Swiper pagination */
+.swiper-pagination-bullet {
+  background: #f93 !important; /* Amber-400 */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f93 !important;
+  opacity: 1;
+  width: 20px; /* Makes the active dot slightly wider */
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+/* Add this line to enable class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
