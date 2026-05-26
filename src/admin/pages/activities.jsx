@@ -6,7 +6,7 @@ import {
   QrCode, Users2, FileSpreadsheet, Send,
   RefreshCw,
   Info
-} from 'lucide-react';
+} from 'lucide-react';     
 
 export default function Activities() {
   // View Toggle and Dynamic Filtering States
